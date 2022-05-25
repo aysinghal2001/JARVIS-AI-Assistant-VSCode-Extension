@@ -1,0 +1,3 @@
+const API_KEY="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";
+
+export default API_KEY;

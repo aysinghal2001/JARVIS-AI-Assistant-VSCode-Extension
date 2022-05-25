@@ -1,0 +1,126 @@
+{
+  "name": "JARVIS-Assistant",
+  "displayName": "JARVIS-AI Assistant",
+  "description": "AI Programming assistant",
+  "publisher": "AyushSinghal",
+  "version": "0.0.1",
+    "engines": {
+    "vscode": "^1.67.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:codex-openai.helloBhai",
+    "onCommand:extension.NLToCode",
+    "onCommand:extension.explainCode",
+    "onCommand:extension.calculateTimeComplexity",
+    "onCommand:extension.generatePythonDocstring",
+    "onCommand:extension.bugFixer",
+    "onCommand:extension.codeTranslation"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codex-openai.helloBhai",
+        "title": "Hello Bhai"
+      },
+      {
+        "command": "extension.NLToCode",
+        "title": "NLToCode"
+      },
+      {
+        "command": "extension.explainCode",
+        "title": "Explain Code"
+      },
+      {
+        "command": "extension.calculateTimeComplexity",
+        "title": "Calculate Time Complexity"
+      },
+      {
+        "command": "extension.generatePythonDocstring",
+        "title": "Generate Python Docstring"
+      },
+      {
+        "command": "extension.bugFixer",
+        "title": "Fix Bugs"
+      },
+      {
+        "command": "extension.codeTranslation",
+        "title": "Translate Code"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "codex-openai.helloBhai",
+        "key": "cmd+ctrl+h",
+        "mac": "cmd+ctrl+h",
+        "win": "ctrl+alt+h",
+        "when": "editorHasSelection"
+      },
+      {
+        "command": "extension.NLToCode",
+        "key": "cmd+ctrl+n",
+        "mac": "cmd+ctrl+n",
+        "win": "ctrl+alt+n",
+        "when": "editorHasSelection"
+      },
+      {
+        "command": "extension.explainCode",
+        "key": "cmd+ctrl+e",
+        "mac": "cmd+ctrl+e",
+        "win": "ctrl+alt+e",
+        "when": "!editorHasSelection"
+      },
+      {
+        "command": "extension.calculateTimeComplexity",
+        "key": "cmd+ctrl+c",
+        "mac": "cmd+ctrl+c",
+        "win": "ctrl+alt+c",
+        "when": "!editorHasSelection"
+      },
+      {
+        "command": "extension.generatePythonDocstring",
+        "key": "cmd+ctrl+p",
+        "mac": "cmd+ctrl+p",
+        "win": "ctrl+alt+p",
+        "when": "!editorHasSelection"
+      },
+      {
+        "command": "extension.bugFixer",
+        "key": "cmd+ctrl+b",
+        "mac": "cmd+ctrl+b",
+        "win": "ctrl+alt+b",
+        "when": "!editorHasSelection"
+      },
+      {
+        "command": "extension.codeTranslation",
+        "key": "cmd+ctrl+t",
+        "mac": "cmd+ctrl+t",
+        "win": "ctrl+alt+t",
+        "when": "!editorHasSelection"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.67.0",
+    "@vscode/test-electron": "^2.1.3",
+    "eslint": "^8.14.0",
+    "glob": "^8.0.1",
+    "mocha": "^9.2.2",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1"
+  }
+}
