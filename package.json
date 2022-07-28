@@ -1,7 +1,8 @@
 {
-  "name": "JARVIS-Assistant",
-  "displayName": "JARVIS-AI Assistant",
-  "description": "AI Programming assistant",
+  "name": "CodeMate",
+  "displayName": "CodeMate-AI Assistant",
+  "description": "Smart AI based Programming Assistant",
+  "icon": "images/codemate.png",
   "publisher": "AyushSinghal",
   "version": "0.0.1",
     "engines": {
@@ -11,7 +12,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:codex-openai.helloBhai",
+    "onCommand:codex-openai.Test",
     "onCommand:extension.NLToCode",
     "onCommand:extension.explainCode",
     "onCommand:extension.calculateTimeComplexity",
@@ -23,8 +24,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "codex-openai.helloBhai",
-        "title": "Hello Bhai"
+        "command": "codex-openai.Test",
+        "title": "Test"
       },
       {
         "command": "extension.NLToCode",
@@ -53,7 +54,7 @@
     ],
     "keybindings": [
       {
-        "command": "codex-openai.helloBhai",
+        "command": "codex-openai.Test",
         "key": "cmd+ctrl+h",
         "mac": "cmd+ctrl+h",
         "win": "ctrl+alt+h",
