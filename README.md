@@ -1,4 +1,4 @@
-# CodeMate README
+# CodeMate 
 
 CodeMate assists developers with day-to-day activities like finding out time complexity of their program in big O notation, explaining the code to them, helping them in translating from one coding language to another in a snap of fingers, fixing their buggy code, getting the auto generated documentation or commenting of their code, etc. The user statements/commands are analyzed with the help of Artificial Intelligence to give an optimal solution. 
 ## Features
@@ -7,7 +7,7 @@ CodeMate assists developers with day-to-day activities like finding out time com
 Reading Code is hard, then understanding it makes it more difficult. The Explain Code feature of Jarvis explains to them what their code actually does in plain English
 
 
-![Explain Code] --baseImagesURL[/images/Explain%20Code.png]
+![Explain Code] [/images/Explain%20Code.png]
 
 2.	Generate Code
 Imagine having a project that needs to be done in a short time or it’s deadline is coming closer, that would be a nightmare for anyone but this might be a good dream with the help of CodeMate if most of the work could be done using this.
