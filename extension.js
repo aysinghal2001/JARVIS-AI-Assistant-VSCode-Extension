@@ -1,9 +1,10 @@
 const vscode = require("vscode");
 const axios = require("axios");
 const https = require("https");
+const path = require("path");
 
 require("dotenv").config({
-  path: "D:/ayush/Development stuff/jarvis-ai assistant/.env",
+  path: path.join(__dirname, ".env"),
 });
 const authToken = process.env.API_KEY;
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -190,6 +191,7 @@ function activate(context) {
         })
         .catch((error) => {
           vscode.window.showErrorMessage(error.code);
+          // console.log(error);
         });
       }
     );
